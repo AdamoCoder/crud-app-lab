@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= car.name %></title> 
+  </head>
+  <body>
+    <body>
+        <h1><%= car.color %></h1>
+        <% if (car.isFourDoor) { %>
+          <p>This car has 4 doors.</p>
+        <% } else { %>
+          <p>This car has 2 doors.</p>
+        <% } %>
+
+        <form action="/cars/<%=car._id%>?_method=DELETE" method="POST">
+            <button type="submit">Left Parking Lot<%= car.color %></button>
+        </form>
+        <a href="/cars/<%= car._id %>/edit">Edit <%= car.color %></a>
+        <a href="/cars">Back To Parking Lot</a>
+      </body>
+    
+  </body>a
+</html>

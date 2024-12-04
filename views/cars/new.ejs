@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Car</title>
+  </head>
+  <body>
+    <a href="/cars/">Back To Parking Lot</a>
+    <h1>Add Another Car!</h1>
+    <form action="/cars" method="POST">
+        <label for="color">Color:</label>
+        <select type="text" name="color" id="color">
+          <option value="">Please select the color</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+    
+        <label for="isFourDoor">Is it a 4 door?</label>
+        <input type="checkbox" name="isFourDoor" id="isFourDoor" />
+    
+        <button type="submit">Add Car</button>
+      </form>
+  </body>
+</html>
